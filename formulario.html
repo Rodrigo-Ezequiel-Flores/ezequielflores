@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+        <title>Curriculum Vitae.cv - Datos</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles/styles_form.css">
+
+    </head>
+    <body>
+        <header>
+            <h1><strong>Dejar Datos</strong></h1>
+        </header>
+        
+    
+        <form action="datos.php" method="GET">
+            <div>
+                <br>
+                <label for="email">Email: </label>
+                <input type="email" id="email" name="email" placeholder="E-mail">
+            </div>
+            <div>
+                <br>
+                <label for="nombre">Nombre de la empresa:</label>
+                <input type="text" id="nombre" placeholder="solo nombre" >
+            </div>
+            
+            <div>
+                <br>
+                <label for="contacto">Numero de contacto</label>
+                <input type="tel" id="contacto" name="contacto" placeholder="123-xxxxxxxx"
+                pattern="[0-9]{3}-[0-9]{8}">
+
+            </div>
+            <div>
+                <br>
+                <input type="checkbox" id="fecha" name="fecha de entreveista" value="fecha de entreveista">
+                <label for="fecha de entreveista">Fecha de entreveista</label>
+                <input type="checkbox" id="fecha" name="fecha de incorporacion" value="fecha de incorporacion">
+                <label for="fecha de incorporacion">Fecha de incorporacion</label><br>
+                
+                <br>
+                <br>
+                <label for="fecha de incorp">Fecha:</label>
+                <input type="date" id="fecha de incorp" min="2020-09-21">
+            </div>
+            <div>
+                <br>
+                <label for="description">Descripsion del trabajo:</label>
+                <input type="text" id="description" placeholder="Agregar descripciones del trabajo">
+                
+            </div>
+            <br>
+            <input type="button" onclick="alert('Datos enviados con exito!')" value="ENVIAR">
+            
+
+        </form>
+        <footer>
+            <p>Rodrigo Ezequiel Flores   -   rodrigoezequiel99@hotmail.com</p>
+            <a href="Index.html">Volver</a>
+            <p class="description">Esta informacion es privada, solo usada por el usuario creador de datos y el dueño de la pagina para facilitar el orden del trabajo</p>
+
+        </footer>
+
+
+    </body>
+</html>
